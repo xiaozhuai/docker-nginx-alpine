@@ -8,7 +8,7 @@ services:
     nginx:
         image: xiaozhuai/nginx-alpine:latest
         volumes:
-            - ./site.conf:/etc/nginx/conf.d/default.conf
+            - ./site.conf:/etc/nginx/http.d/default.conf
             - ./www:/www
         ports:
             - 5000:80
